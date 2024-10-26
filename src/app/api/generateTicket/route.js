@@ -6,9 +6,9 @@ import { db } from '../../firebase';
 const getAccessToken = async () => {
   try {
     const response = await axios.post(`https://${process.env.AUTH0_DOMAIN}/oauth/token`, {
-      client_id: process.env.AUTH0_M2M_CLIENT_ID,
-      client_secret: process.env.AUTH0_M2M_CLIENT_SECRET,
-      audience: process.env.AUTH0_M2M_AUDIENCE,
+      client_id: 'X6rTyRSZgGKSeknuyXz3E4AUCbHjQBBi',
+      client_secret: '9FJX-vQLBBC08gFlvCx_D7pGSN3qoqDJXFcCXidO4aiAf76x9Ejo-fxEuYULF8PK',
+      audience: 'https://myAPI.com',
       grant_type: 'client_credentials',
       scope: 'create:tickets',
     });
