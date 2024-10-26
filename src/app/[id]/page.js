@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { doc, getDoc } from 'firebase/firestore';
-import { db } from './../../firebase'; 
+import { db } from './../firebase'; 
 import { useParams, useRouter } from 'next/navigation'; 
 
 const TicketDetailPage = () => {
