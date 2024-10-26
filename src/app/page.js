@@ -13,7 +13,7 @@ export default function HomePage() {
       try {
         const ticketsCol = collection(db, 'tickets');
         const ticketsSnapshot = await getDocs(ticketsCol);
-        setTotalTickets(ticketsSnapshot.size); // Set the total number of tickets
+        setTotalTickets(ticketsSnapshot.size);
       } catch (error) {
         console.error('Error fetching tickets:', error);
       } finally {
