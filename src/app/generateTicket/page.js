@@ -42,7 +42,7 @@ const GenerateTicket = () => {
     }
   };
 
-  const ticketUrl = ticketId ? `${window.location.origin}/tickets/${ticketId}` : null;
+  const ticketUrl = ticketId ? `${window.location.origin}/${ticketId}` : null;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-indigo-600">
